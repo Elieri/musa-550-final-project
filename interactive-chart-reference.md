@@ -9,9 +9,6 @@ folium-loader:
   folium-chart-2: ["charts/percent_no_internet.html", "400"] # second argument is the desired height
 ---
 
-[writeup preview]('./writeup.html')
-
-
 # Welcome!
 
 This single-page website demos how to display visualizations created with altair, hvplot, and folium.
