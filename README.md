@@ -1,9 +1,6 @@
-# MUSA 550 Final Project
+# Estimating Transit Travel Times with UrbanAccess and Pandana
 
-Elisabeth Ericson
-
-Fall 2021
-
+Final project for MUSA 550: Geospatial Data Science in Python at the University of Pennsylvania's Weitzman School of Design, Fall 2021.
 
 
 
