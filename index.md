@@ -19,6 +19,7 @@ I based this analysis on [Capital Bikeshare trip history data](https://www.capit
 
 To build the transit network, I retrieved stop, route, and schedule data in [General Transit Feed Specification (GTFS)](https://developers.google.com/transit/gtfs) format from four separate feeds: Washington Metropolitan Area Transit Authority (WMATA) [bus](https://developer.wmata.com/docs/services/gtfs/operations/bus-gtfs-static) and [rail](https://developer.wmata.com/docs/services/gtfs/operations/5cdc5367acb52c9350f69753), the [D.C. Circulator](https://www.dccirculator.com/developer-resources/) bus, and the [D.C. Streetcar](https://dcstreetcar.com/developer-resources/). I retrieved street network data from OpenStreetMap through UrbanAccess.
 
+***
 
 ## Creating the transit-pedestrian network
 
@@ -49,7 +50,9 @@ A note about scope: UrbanAccess produces a static network object that draws its 
 
 Still within UrbanAccess, I downloaded OpenStreetMap nodes and edges for a bounding box around D.C., and created a time-weighted graph with a walking speed of 3 mph, which I combined with the transit network to create a final integrated network. (This part was as described in the tutorial, and I can take no credit.)
 
-[TODO: finalize, export, and add transit network chart]
+[TODO: finalize, export, and add transit network charts]
+
+***
 
 ## Estimating transit travel times for bikeshare trips
 
@@ -71,6 +74,8 @@ The plan for this project included comparing travel patterns between docked and 
 
 Finally, I initialized a Pandana network from the UrbanAccess network's nodes and edges, and then used Pandana's `shortest_path_lengths()` function to compute the estimated travel time between each bikeshare trip's start and end coordinates along the pedestrian and transit network. After all the build-up, this part of the project was completely uneventful and much faster than I expected.
 
+***
+
 ## Comparing bikeshare ride times to transit estimates
 
 I wrote about the results of this analysis in much greater depth for a transportation planning class, but in short: 
@@ -83,7 +88,9 @@ I wrote about the results of this analysis in much greater depth for a transport
 
 * The mean ratio of estimated travel time to recorded ride time was 1.93; the median was 1.88. 
 
-For more discussion of the results from a transportation planning perspective, a PDF of the paper can be found [here]('./cpln-550-final-paper.pdf').
+For more discussion of the results from a transportation planning perspective, a PDF of the paper can be found [here]('https://github.com/Elieri/musa-550-final-project/blob/main/cpln-550-final-paper.pdf').
+
+***
 
 
 ## Were the estimates accurate? 
@@ -91,6 +98,8 @@ For more discussion of the results from a transportation planning perspective, a
 To see if the network's travel time estimates were anywhere near accurate, I manually spot-checked a random sample of origin-destination pairs against Google Maps transit time estimates for the same trip at the same time of day. I found that UrbanAccess/Pandana estimates were usually comparable to the lower end of Google's transit estimates for the same trip, and more often underestimated than overestimated travel time compared to Google Maps.
 
 One important caveat, though: When analyzing the data later on, I ran across a handful of origin-destination clusters where network trip time estimates were several times larger than what they should be, for no immediately apparent reason. These errors were few enough not to invalidate the entire analysis, but serious enough to need resolution before this method can be relied on for more serious work. My first guess is that a few missing or disconnected nodes or edges might be causing routing errors in specific parts of the network, but without more troubleshooting it's hard to say.
+
+***
 
 ## Some final thoughts
 
