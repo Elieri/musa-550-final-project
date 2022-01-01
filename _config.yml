@@ -2,7 +2,6 @@ title: Estimating Transit Travel Times with UrbanAccess
 logo: /assets/img/logo.png
 description: Final project for MUSA 550: Geospatial Data Science in Python.
 show_downloads: false
-repository: Elieri/musa-550-final-project
 google_analytics:
 remote_theme: pages-themes/minimal
 plugins:
