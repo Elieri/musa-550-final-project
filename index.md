@@ -50,7 +50,15 @@ A note about scope: UrbanAccess produces a static network object that draws its 
 
 Still within UrbanAccess, I downloaded OpenStreetMap nodes and edges for a bounding box around D.C., and created a time-weighted graph with a walking speed of 3 mph, which I combined with the transit network to create a final integrated network. (This part was as described in the tutorial, and I can take no credit.)
 
+#### Transit network alone
+![Transit network alone](./images/transit-network.png)
+
+#### Pedestrian network alone
 ![Pedestrian network alone](./images/pedestrian-network.png)
+
+#### Integrated transit and pedestrian network
+![Integrated network](./images/integrated-network.png)
+
 
 ***
 
