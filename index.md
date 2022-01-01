@@ -90,6 +90,8 @@ I wrote about the results of this analysis in much greater depth for a transport
 
 * Estimated transit-walking times followed a roughly normal distribution, while bikeshare trips skewed toward shorter average trip times with a substantially longer tail.
 
+![Distribution of bikeshare ride times and travel time estimates](./images/paired-histograms.png)
+
 * The longest bikeshare trip was more than twice as long as the longest travel estimate, which might be indicative of biking for leisure and not just as transportation, or might just be an artifact of a returned bike not being recognized as such in the system.
 
 * Mean and median bikeshare ride times (about 12 and 10 minutes, respectively) were substantially shorter than the mean and median travel estimates (both around 19 minutes). This seems to at least tentatively support the hypothesis that riders tend to choose bikeshare when they know it to be faster than their best transit or walking option.
