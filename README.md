@@ -1,6 +1,4 @@
-# Comparing Bikeshare and Transit Travel Times with UrbanAccess and Pandana
-**MUSA 550: Geospatial Data Science in Python**
-**Final Project**
+# MUSA 550 Final Project
 
 Elisabeth Ericson
 
