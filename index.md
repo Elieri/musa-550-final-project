@@ -88,7 +88,7 @@ I wrote about the results of this analysis in much greater depth for a transport
 
 * The mean ratio of estimated travel time to recorded ride time was 1.93; the median was 1.88. 
 
-For more discussion of the results from a transportation planning perspective, a PDF of the paper can be found [here]('https://github.com/Elieri/musa-550-final-project/blob/main/cpln-550-final-paper.pdf').
+For more discussion of the results from a transportation planning perspective, a PDF of the paper can be found [here](./cpln-550-final-paper.pdf).
 
 ***
 
