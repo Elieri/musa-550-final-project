@@ -1,6 +1,6 @@
 # Estimating Transit Travel Times with UrbanAccess and Pandana
 
-Final project for MUSA 550: Geospatial Data Science in Python at the University of Pennsylvania's Weitzman School of Design, Fall 2021.
+Final project for MUSA 550: Geospatial Data Science in Python, Fall 2021. Completed as part of the Master of Urban Spatial Analytics program at the University of Pennsylvania's Weitzman School of Design.
 
 
 
